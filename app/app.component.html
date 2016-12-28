@@ -1,18 +1,16 @@
 <div class="container">
     <div>
-        <h1><a routerLink="/welcome">ThanhGular</a></h1>
+        <h1>
+            <span>                
+                ThanhGular
+            </span>
+        </h1>
     </div>
     <ul class="nav nav-tabs">
         <li class="nav-item"><a class="nav-link" routerLink="/md5">MD5</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
     </ul>
-    <div class="container">
-        <div class="row row-centered">
-            <div class="col-xs-6 col-centered">
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </div>
+    <router-outlet></router-outlet>
 </div>
 <footer class="bd-footer text-muted">
     <div class="container">

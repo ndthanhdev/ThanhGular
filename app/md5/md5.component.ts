@@ -10,7 +10,7 @@ import { MD5 } from './md5';
 export class MD5Component {
     input: string;
     result: any = '';
-    fck(): void {
+    hash(): void {
         this.result = MD5.encrypt(this.input);
     }
 }
