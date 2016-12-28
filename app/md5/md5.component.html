@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>MD5 Tool</h1>
+    <div class="input-group">
+        <span class="input-group-addon">Original</span>
+        <input [(ngModel)]="input" type="text" class="form-control" aria-describedby="basic-addon1" placeholder="input here...">
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary" (click)="fck()">compute</button>
+    </div>
+    <div>
+        <span>{{result}}</span>
+    </div>
+</div>
