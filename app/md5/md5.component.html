@@ -1,5 +1,5 @@
-<h2 class="mb-2">MD5 Tool</h2>
-<div class="container">
+<h2 class="mt-1">MD5 Tool</h2>
+<div class="container mt-1">
     <div class="row">
         <div class="col-xs-6 offset-xs-1">
             <div class="input-group">
@@ -8,13 +8,13 @@
             </div>
         </div>
         <div class="col-xs-2">
-            <button type="button" class="btn btn-primary" (click)="hash()">Compute</button>
+            <button type="button" class="btn btn-primary w-100" (click)="hash()">Compute</button>
         </div>
     </div>
     <div class="row pt-2">
         <blockquote class="blockquote blockquote-reverse col-xs-7">{{result}}</blockquote>
         <div class="col-xs-2">
-            <button type="button" class="btn btn-success" (click)="hash()">Copy</button>
+            <button type="button" class="btn btn-outline-success w-100" disabled>Copy</button>
         </div>
     </div>
 </div>
