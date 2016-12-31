@@ -8,13 +8,13 @@
             </div>
         </div>
         <div class="col-xs-2">
-            <button type="button" class="btn btn-primary w-100" (click)="hash()">Compute</button>
+            <button type="button" (click)="hash()" class="btn btn-primary w-100">Compute</button>
         </div>
     </div>
     <div class="row pt-2">
-        <blockquote class="blockquote blockquote-reverse col-xs-7">{{result}}</blockquote>
+        <blockquote id="output" class="blockquote blockquote-reverse col-xs-7">{{result}}</blockquote>
         <div class="col-xs-2">
-            <button type="button" class="btn btn-outline-success w-100" disabled>Copy</button>
+            <button type="button" (click)="copy()" class="btn btn-outline-success w-100">Copy</button>
         </div>
     </div>
 </div>

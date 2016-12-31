@@ -5,16 +5,16 @@ import 'rxjs/add/operator/toPromise';
 
 import { About } from './about'
 
-const aboutUrl = 'asdasd';
-
 
 @Injectable()
 export class AboutService {
+
+    private aboutUrl: string = 'https://raw.githubusercontent.com/thanhtdt/ThanhGular/master/app/about/about.json';
 
     constructor(private http: Http) {
 
     }
     getAbout(): Promise<About> {
-        return this.http.get(aboutUrl).toPromise().then(response => response.json() as About);
+        return this.http.get(this.aboutUrl).toPromise().then(response => response.json().About as About);
     }
 }
