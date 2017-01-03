@@ -10,9 +10,11 @@ import { MD5 } from './md5';
 export class MD5Component {
     input: string;
     result: any = '';
+
     hash(): void {
         this.result = MD5.encrypt(this.input);
     }
+
     copy(): void {
         // Create an auxiliary hidden input
         var aux = document.createElement("input");
@@ -30,8 +32,6 @@ export class MD5Component {
 
         // Remove the input from the body
         document.body.removeChild(aux);
-
-        alert('copied');
     }
 }
 
