@@ -1,0 +1,20 @@
+<h2 class="mt-1">MD5 Tool</h2>
+<div class="container mt-1">
+    <div class="row">
+        <div class="col-xs-6 offset-xs-1">
+            <div class="input-group">
+                <span class="input-group-addon">Original</span>
+                <input id="input-zone" [(ngModel)]="input" type="text" class="form-control" aria-describedby="basic-addon1" placeholder="input here...">
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <button type="button" (click)="hash()" class="btn btn-primary w-100">Compute</button>
+        </div>
+    </div>
+    <div class="row pt-2">
+        <blockquote id="output" class="blockquote blockquote-reverse col-xs-7">{{result}}</blockquote>
+        <div class="col-xs-2">
+            <button type="button" (click)="copy()" class="btn btn-outline-success w-100">Copy</button>
+        </div>
+    </div>
+</div>
